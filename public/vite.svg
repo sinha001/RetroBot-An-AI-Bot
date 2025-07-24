@@ -1,6 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="48" height="48" fill="none">
-  <rect x="8" y="12" width="48" height="36" rx="6" ry="6" stroke="#4F46E5" stroke-width="3" fill="#ebe2cc" />
-  <polygon points="26,22 38,30 26,38" fill="#f59e0b" />
-  <rect x="20" y="48" width="8" height="4" fill="#ebe2cc" />
-  <rect x="28" y="44" width="4" height="8" fill="#ebe2cc" />
+<svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="drop-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="robotGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="50%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
+    <linearGradient id="eyeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Robot Head -->
+  <rect x="20" y="25" width="60" height="50" rx="15" ry="15" fill="url(#robotGradient)" filter="url(#glow)" />
+
+  <!-- Eyes -->
+  <circle cx="35" cy="45" r="6" fill="url(#eyeGradient)" />
+  <circle cx="65" cy="45" r="6" fill="url(#eyeGradient)" />
+
+  <!-- Eye Highlights -->
+  <circle cx="37" cy="43" r="2" fill="white" opacity="0.8" />
+  <circle cx="67" cy="43" r="2" fill="white" opacity="0.8" />
+
+  <!-- Mouth/Speaker Grille -->
+  <rect x="40" y="55" width="20" height="8" rx="4" fill="white" opacity="0.3" />
+  <rect x="42" y="57" width="2" height="4" rx="1" fill="white" opacity="0.6" />
+  <rect x="46" y="57" width="2" height="4" rx="1" fill="white" opacity="0.6" />
+  <rect x="50" y="57" width="2" height="4" rx="1" fill="white" opacity="0.6" />
+  <rect x="54" y="57" width="2" height="4" rx="1" fill="white" opacity="0.6" />
+
+  <!-- Antenna -->
+  <rect x="48" y="15" width="4" height="15" rx="2" fill="url(#robotGradient)" />
+  <circle cx="50" cy="12" r="4" fill="url(#eyeGradient)" />
+  <circle cx="50" cy="12" r="2" fill="white" opacity="0.8" />
+
+  <!-- Body/Neck -->
+  <rect x="45" y="75" width="10" height="15" rx="5" fill="url(#robotGradient)" opacity="0.8" />
+
+  <!-- Circuit Pattern -->
+  <path d="M25 35 L30 35 L30 40 M70 35 L75 35 L75 40 M30 50 L35 50 M65 50 L70 50" stroke="white" stroke-width="1.5" opacity="0.4" fill="none" />
 </svg>
