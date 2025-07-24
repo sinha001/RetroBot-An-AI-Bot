@@ -82,7 +82,7 @@ A modern, sleek, and responsive AI chatbot interface built with vite and React. 
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 retrobot/
 ├── src/
 │   ├── components/
@@ -98,7 +98,7 @@ retrobot/
 │   └── logo.svg                # App logo SVG
 ├── README.md
 └── package.json
-\`\`\`
+```
 
 ## 🎯 Key Components
 
